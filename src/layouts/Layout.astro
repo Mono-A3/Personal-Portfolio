@@ -53,6 +53,7 @@ const { description, title } = Astro.props;
 
       html {
         font-family: 'Onest Variable', system-ui, sans-serif;
+        scroll-behavior: smooth;
       }
 
       body {
@@ -69,7 +70,7 @@ const { description, title } = Astro.props;
         }
       }
 
-      @media (prefers-color-sheme: dark) {
+      @media (prefers-color-scheme: dark) {
         body {
           color: rgba(255, 255, 255, 0.9);
         }
