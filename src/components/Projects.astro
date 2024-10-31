@@ -7,6 +7,7 @@ import LinkButton from './LinkButton.astro';
 import PHPIcon from './icons/PHP.astro';
 import JSIcon from './icons/JS.astro';
 import MySQL from './icons/MySQL.astro';
+import Bootstrap from './icons/Bootstrap.astro';
 
 const TAGS = {
   PHP: {
@@ -21,8 +22,13 @@ const TAGS = {
   },
   MySQL: {
     name: 'MySQL',
-    class: 'bg-blue-400 p-4 text-white',
+    class: 'bg-blue-400 text-white',
     icon: MySQL,
+  },
+  BOOTSTRAP: {
+    name: 'Bootstrap',
+    class: 'bg-purple-500 text-white',
+    icon: Bootstrap,
   },
   NEXT: {
     name: 'Next.js',
@@ -44,7 +50,7 @@ const PROJECTS = [
     link: 'https://turiscompra.infinityfreeapp.com',
     github: 'https://github.com/Mono-A3/Turiscompra',
     image: '',
-    tags: [TAGS.PHP, TAGS.JS, TAGS.MySQL],
+    tags: [TAGS.PHP, TAGS.JS, TAGS.MySQL, TAGS.BOOTSTRAP],
   },
 ];
 ---
