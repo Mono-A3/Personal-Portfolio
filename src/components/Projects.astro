@@ -8,6 +8,8 @@ import PHPIcon from './icons/PHP.astro';
 import JSIcon from './icons/JS.astro';
 import MySQL from './icons/MySQL.astro';
 import Bootstrap from './icons/Bootstrap.astro';
+import AstroIcon from './icons/Astro.astro';
+import JS from './icons/JS.astro';
 
 const TAGS = {
   PHP: {
@@ -30,6 +32,11 @@ const TAGS = {
     class: 'bg-purple-500 text-white',
     icon: Bootstrap,
   },
+  Astro: {
+    name: 'Astro',
+    class: 'bg-purple-900 text-white',
+    icon: AstroIcon,
+  },
   NEXT: {
     name: 'Next.js',
     class: 'bg-black text-white',
@@ -51,6 +58,14 @@ const PROJECTS = [
     github: 'https://github.com/Mono-A3/Turiscompra',
     image: '/projects/turiscompra.png',
     tags: [TAGS.PHP, TAGS.JS, TAGS.MySQL, TAGS.BOOTSTRAP],
+  },
+  {
+    title: 'Andres Araque',
+    description: '',
+    link: 'https://andresaraque.com',
+    github: 'https://github.com/Mono-A3/AndresAraque',
+    image: '',
+    tags: [TAGS.Astro, TAGS.TAILWIND, TAGS.JS],
   },
 ];
 ---
