@@ -1,5 +1,5 @@
 ---
-import '@fontsource-variable/onet';
+import '@fontsource-variable/onest';
 
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -32,7 +32,7 @@ const { description, title } = Astro.props;
     <ViewTransitions />
   </head>
 
-  <body>
+  <body class="relative text-black dark:text-white">
     <slot />
   </body>
 </html>
