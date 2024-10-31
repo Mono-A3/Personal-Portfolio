@@ -4,8 +4,14 @@ import NextJS from './icons/NextJS.astro';
 import Tailwind from './icons/Tailwind.astro';
 import Link from './icons/Link.astro';
 import LinkButton from './LinkButton.astro';
+import PHPIcon from './icons/PHP.astro';
 
 const TAGS = {
+  PHP: {
+    name: 'PHP',
+    class: 'bg-purple-500 text-white',
+    icon: PHPIcon,
+  },
   NEXT: {
     name: 'Next.js',
     class: 'bg-black text-white',
@@ -20,12 +26,13 @@ const TAGS = {
 
 const PROJECTS = [
   {
-    title: '',
-    description: '',
-    link: '',
-    github: '',
+    title: 'Turiscompra',
+    description:
+      'Este proyecto tiene como objetivo conectar directamente a los campesinos con los consumidores mediante una tienda virtual. A través de la plataforma, los campesinos pueden registrar sus productos, gestionar ventas y controlar sus propias transacciones de manera autónoma.',
+    link: 'https://turiscompra.infinityfreeapp.com',
+    github: 'https://github.com/Mono-A3/Turiscompra',
     image: '',
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.PHP],
   },
 ];
 ---
