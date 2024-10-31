@@ -5,12 +5,18 @@ import Tailwind from './icons/Tailwind.astro';
 import Link from './icons/Link.astro';
 import LinkButton from './LinkButton.astro';
 import PHPIcon from './icons/PHP.astro';
+import JSIcon from './icons/JS.astro';
 
 const TAGS = {
   PHP: {
     name: 'PHP',
     class: 'bg-purple-500 text-white',
     icon: PHPIcon,
+  },
+  JS: {
+    name: 'JavaScript',
+    class: 'bg-yellow-500 text-black',
+    icon: JSIcon,
   },
   NEXT: {
     name: 'Next.js',
@@ -32,7 +38,7 @@ const PROJECTS = [
     link: 'https://turiscompra.infinityfreeapp.com',
     github: 'https://github.com/Mono-A3/Turiscompra',
     image: '',
-    tags: [TAGS.PHP],
+    tags: [TAGS.PHP, TAGS.JS],
   },
 ];
 ---
