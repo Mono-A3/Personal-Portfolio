@@ -1,0 +1,40 @@
+---
+const personalImageAlt = 'Andres Araque';
+import Badge from '../components/Badge.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import MailIcon from '../components/icons/Mail.astro';
+import SocialPill from '../components/SocialPill.astro';
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img class="rounded-full shadow-lg size-16" src="/.webp" alt={personalImageAlt} />
+    <a
+      href="https://www.linkedin.com/in/araque-andres"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">Hey, soy Andres</h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    <strong>Más de 1 año de experiencia</strong> como <strong
+      >Desarrollador Web y Estudiante de Tecnología en Análisis y Desarrollo de Software</strong
+    >. Ubicado en Colombia 🇨🇴, estoy especializado en la creación de aplicaciones web innovadoras y proyectos personales
+    que destacan por su funcionalidad y diseño.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:aaraqueamaya397@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/araque-andres">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
