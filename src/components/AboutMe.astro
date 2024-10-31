@@ -1,0 +1,36 @@
+---
+const personalImageAlt = 'Andrés Stiven Araque';
+---
+
+<article class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row">
+  <div
+    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
+  >
+    <p>
+      Me llamo Andrés Stiven Araque y tengo 18 años. Soy un <strong>Desarrollador Web autodidacta</strong> de Colombia 🇨🇴,
+      especializado en crear aplicaciones web únicas y funcionales. Mi pasión por la programación comenzó con proyectos personales,
+      como <strong>Turiscompra</strong>, una tienda virtual que desarrollé utilizando PHP y JavaScript.
+    </p>
+
+    <p>
+      A lo largo de mi formación, he adquirido habilidades en tecnologías como <strong>Node.js, Astro y CSS</strong>.
+      Disfruto aprender y aplicar nuevas herramientas que me permitan mejorar mis proyectos y contribuir a soluciones
+      innovadoras.
+    </p>
+
+    <p>
+      Además, estoy comprometido con la comunidad y busco siempre compartir conocimientos y experiencias con otros
+      desarrolladores. Mi objetivo es crear un impacto positivo a través del desarrollo de software y mejorar la
+      accesibilidad de la tecnología para todos.
+    </p>
+  </div>
+
+  <img
+    width="200"
+    height="200"
+    src="/me.png"
+    alt={personalImageAlt}
+    class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
+    style="object-position: 50% 50%"
+  />
+</article>
